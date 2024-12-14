@@ -178,7 +178,7 @@ body {
     left: 50%; /* Position it in the center */
     bottom: -10px; /* Place it just below the text */
     transform: translateX(-50%); /* Center it horizontally */
-    width: 500px; /* Width of the line */
+    width: 300px; /* Width of the line */
     height: 3px; /* Thickness of the line */
     background: linear-gradient(to right, #ff6600, #ff9800); /* Gradient color */
     border-radius: 5px; /* Slight rounding of the ends */
@@ -743,7 +743,7 @@ footer .social-links a:hover {
         align-items: center;  /* Centers content horizontally */
         justify-content: center;  /* Centers content vertically */
         text-align: center;  /* Ensures the text is centered */
-        width: 100%;  /* Ensures items fill the container */
+        width: 150%;  /* Ensures items fill the container */
         border-radius: 18px;
         padding: 0 10px; /* Adjust padding for better spacing */
         margin-left: 15px;
