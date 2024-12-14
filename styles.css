@@ -108,6 +108,13 @@ body {
     gap: 10px;  /* Space between items */
 }
 
+.legendary-nft-samples {
+    display: flex;
+    flex-wrap: wrap;  /* Ensure the items wrap to new rows */
+    justify-content: space-between;  /* Space items evenly */
+    gap: 10px;  /* Space between items */
+}
+
 .nft-item {
     text-align: center;
     width: calc(100% / 6 - 10px);  /* Make each item take up 1/6th of the row, accounting for the gap */
@@ -123,6 +130,13 @@ body {
 }
 
 .nft-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;  /* Space between the name and the image */
+    color: #000000;
+}
+
+.legendary-nft-name {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 5px;  /* Space between the name and the image */
@@ -600,7 +614,7 @@ footer .social-links a:hover {
 /* Adjust the Rarity Carrot Image and Other Images in the Rarity Section */
 @media (max-width: 768px) {
     .rarity-title-content img, .rarity-content img {
-        width: 100%; /* Make images in Rarity section responsive */
+        width: 200%; /* Make images in Rarity section responsive */
         max-width: 300px; /* Set max width for better scaling */
         margin: 0 auto;
         display: block;
@@ -624,5 +638,145 @@ footer .social-links a:hover {
 
     .rarity-text p, .rarity-title-text p {
         font-size: 1em; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 768px) {
+    .rarity-image {
+        margin-left: -20px; /* Adjust this value as needed */
+    }
+
+    /* Optional: fine-tune the position of the image itself */
+    .rarity-image img {
+        transform: translateX(-110px); /* Adjust this value to move the image left */
+        border-radius: 8px;
+
+    }
+    .raritylogo-image {
+        width: 80%;
+        margin-left: 0px; /* Adjust this value as needed */
+
+    }
+
+    .rarity-title-text h2 {
+        width: 150%; /* Allow h2 to take full width */
+        margin-right: 20px; /* Optional: Add right margin */
+        white-space: nowrap; /* Prevent wrapping */
+        overflow: hidden; /* Hide overflow content */
+    }
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    .about-content {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Space between the sections */
+    }
+
+    .about-section {
+        width: 90%; /* Ensure each section takes full width */
+        padding: 10px; /* Optional: Adjust padding for better spacing */
+    }
+
+    .about-section h3 {
+        font-size: 1.5rem; /* Optional: Adjust font size for better readability */
+    }
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+    .button-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap onto the next line */
+        justify-content: center; /* Center align the content */
+        gap: 10px; /* Add space between items */
+    }
+
+    .button-image {
+        width: 30%; /* Ensure images fit in a row */
+        max-width: 100px; /* Optional: Limit the maximum size */
+        border-radius: 8px;
+
+    }
+
+    .btn-meet-doods {
+        width: 90%; /* Make buttons take most of the width */
+        text-align: center; /* Center-align text */
+        padding: 10px 0; /* Adjust padding for better clickability */
+    }
+
+    /* Specific positioning */
+    .button-container img:nth-child(1),
+    .button-container img:nth-child(2),
+    .button-container img:nth-child(3) {
+        order: 1; /* Ensure these images come first */
+    }
+
+    .button-container .btn-meet-doods:nth-of-type(1) {
+        order: 2; /* Place the first button below the first 3 images */
+    }
+
+    .button-container .btn-meet-doods:nth-of-type(2) {
+        order: 3; /* Place the second button below the first button */
+    }
+
+    .button-container img:nth-child(6),
+    .button-container img:nth-child(7),
+    .button-container img:nth-child(8) {
+        order: 4; /* Place the last 3 images below the second button */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nft-samples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row on mobile */
+        gap: 15px;
+    }
+    .nft-name {
+        line-height: 1.2em; /* Adjust line height for readability */
+        min-height: 3.2em; /* Ensures two lines of height */
+        display: block; /* Ensures proper block-level rendering */
+    }
+    
+    .nft-item img {
+        width: 100%;  /* Make images fill their containers */
+        border-radius: 8px;
+    }
+
+    .nft-item  {
+        width: 100%;  /* Make images fill their containers */
+        border-radius: 18px;
+        justify-content: center; /* Centers content vertically */
+
+    }
+
+}
+
+@media (max-width: 768px) { /* Targeting mobile */
+    .legendary-nft-samples { 
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next row */
+        justify-content: space-between; /* Ensures space between items */
+    }
+
+    .legendary-nft-item {
+        flex: 0 0 calc(50% - 10px); /* Ensures 2 items per row, with margin gap */
+        margin-bottom: 10px; /* Adds space between rows */
+        box-sizing: border-box; /* Ensures padding and borders are included in width */
+        text-align: center; /* Centers the content inside each item */
+    }
+
+    .legendary-nft-item img {
+        width: 100%; /* Ensures images fill their containers */
+        border-radius: 8px; /* Optional: rounded corners for images */
+    }
+
+    .legendary-nft-name {
+        margin-top: 10px; /* Adds space between the image and the name */
+        font-size: 1.2em; /* Adjusts font size */
+        min-height: 3.2em; /* Ensures two lines of height */
+
     }
 }
