@@ -745,27 +745,27 @@ footer .social-links a:hover {
         text-align: center;  /* Ensures the text is centered */
         width: 100%;  /* Ensures items fill the container */
         border-radius: 18px;
-        margin-left: 25px;
-        
+        padding: 0 15px; /* Adds some padding to avoid too much tightness */
+        margin-left: 10px; /* Adjusted margin for better centering */
     }
 
     .nft-name {
         line-height: 1.2em; /* Adjust line height for readability */
         display: block; /* Ensures proper block-level rendering */
-        width: 110%; /* Make name take up the full width */
+        width: 110%; /* Make name take up 110% of the width */
         font-size: 1.2em; /* Optional: adjust font size for better readability */
         margin-top: 10px; /* Add some space between the image and the name */
-        margin-left: -50px;
+        text-align: center; /* Ensures the name is centered */
         min-height: 3.2em; /* Ensures two lines of height */
-
+        margin-left: -5%; /* Aligns the name with the 110% width */
     }
 
     .nft-item img {
         width: 100%;  /* Make images fill their containers */
         border-radius: 8px;
-        
     }
 }
+
 
 
 
