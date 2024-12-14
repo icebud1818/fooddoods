@@ -581,3 +581,48 @@ footer .social-links a:hover {
 
 
 
+/* Adjust About Section Images and Buttons on Mobile */
+@media (max-width: 768px) {
+    /* Shrink images in the About Section */
+    #kitchenBack img, #legendary img {
+        max-width: 90%; /* Limit size for mobile */
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Shrink buttons in the About Section */
+    .cta-buttons .btn {
+        padding: 8px 16px; /* Smaller padding */
+        font-size: 1em; /* Adjust font size */
+    }
+}
+
+/* Adjust the Rarity Carrot Image and Other Images in the Rarity Section */
+@media (max-width: 768px) {
+    .rarity-title-content img, .rarity-content img {
+        width: 100%; /* Make images in Rarity section responsive */
+        max-width: 300px; /* Set max width for better scaling */
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Increase size for rarity carrot image specifically */
+    .rarity-title-content img {
+        width: 70%; /* Slightly larger carrot image */
+    }
+}
+
+/* Ensure images in the Rarity Section scale properly on small screens */
+@media (max-width: 480px) {
+    .rarity-title-content img, .rarity-content img {
+        width: 100%; /* Full width images for smaller screens */
+    }
+
+    .rarity-text h2, .rarity-title-text h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .rarity-text p, .rarity-title-text p {
+        font-size: 1em; /* Adjust paragraph size */
+    }
+}
