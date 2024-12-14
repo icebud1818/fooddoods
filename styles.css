@@ -628,8 +628,10 @@ footer .social-links a:hover {
 
 /* Ensure images in the Rarity Section scale properly on small screens */
 @media (max-width: 480px) {
-    .rarity-title-content img, .rarity-content img {
-        width: 100%; /* Full width images for smaller screens */
+ .rarity-content img {
+        width: 170%; /* Full width images for smaller screens */
+        margin-left: 30px;
+        margin-bottom: -30px;
     }
 
     .rarity-text h2, .rarity-title-text h2 {
@@ -755,7 +757,6 @@ footer .social-links a:hover {
         margin-top: 10px; /* Add some space between the image and the name */
         margin-left: -50px;
         min-height: 3.2em; /* Ensures two lines of height */
-
 
     }
 
