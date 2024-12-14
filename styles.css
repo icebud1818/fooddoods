@@ -731,28 +731,40 @@ footer .social-links a:hover {
 @media only screen and (max-width: 768px) {
     .nft-samples {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 items per row on mobile */
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on mobile */
         gap: 15px;
     }
+
+    .nft-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Centers content horizontally */
+        justify-content: center;  /* Centers content vertically */
+        text-align: center;  /* Ensures the text is centered */
+        width: 100%;  /* Ensures items fill the container */
+        border-radius: 18px;
+        margin-left: 25px;
+        
+    }
+
     .nft-name {
         line-height: 1.2em; /* Adjust line height for readability */
-        min-height: 3.2em; /* Ensures two lines of height */
         display: block; /* Ensures proper block-level rendering */
+        width: 110%; /* Make name take up the full width */
+        font-size: 1.2em; /* Optional: adjust font size for better readability */
+        margin-top: 10px; /* Add some space between the image and the name */
+        margin-left: -50px;
+
     }
-    
+
     .nft-item img {
         width: 100%;  /* Make images fill their containers */
         border-radius: 8px;
+        
     }
-
-    .nft-item  {
-        width: 100%;  /* Make images fill their containers */
-        border-radius: 18px;
-        justify-content: center; /* Centers content vertically */
-
-    }
-
 }
+
+
 
 @media (max-width: 768px) { /* Targeting mobile */
     .legendary-nft-samples { 
