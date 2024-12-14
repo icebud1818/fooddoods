@@ -1,0 +1,583 @@
+/* Body background set to white */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;  /* Set body background to white */
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #0e4dfc, #00ffd5); /* Left to right gradient */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons .btn {
+    padding: 10px 20px;
+    background-color: #3bd275;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    margin: 10px;
+}
+
+.cta-buttons .btn.secondary {
+    background-color: #ff6600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+
+/* About Section */
+#kitchenBack {
+    padding: 30px 20px;
+    background: linear-gradient(to right, #0e4dfc, #00ffd5); /* Left to right gradient */
+    text-align: center;
+}
+
+#kitchenBack h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+#kitchenBack p {
+    font-size: 1.2em; /* Adjusted font size for smaller text */
+    color: #000000; /* Keep the text white */
+    font-family: 'Lato', sans-serif; /* A clean, modern sans-serif font */
+    font-weight: 400; /* Normal weight for a clean look */
+    line-height: 1.6; /* Improve readability with slightly increased line height */
+    text-align: center; /* Center-align the text */
+    background-color: rgba(255, 255, 255); /* Add a subtle semi-transparent background */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 1200px; /* Limit width for readability */
+    margin: 20px auto; /* Center the paragraph and add margin */
+}
+
+
+
+/* About Section */
+#legendary {
+    padding: 30px 20px;
+    background: linear-gradient(to right, #f96c26, #ff4520); /* Left to right gradient */
+    text-align: center;
+}
+
+#legendary h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+#legendary p {
+    font-size: 1.2em; /* Adjusted font size for smaller text */
+    color: #000000; /* Keep the text white */
+    font-family: 'Lato', sans-serif; /* A clean, modern sans-serif font */
+    font-weight: 400; /* Normal weight for a clean look */
+    line-height: 1.6; /* Improve readability with slightly increased line height */
+    text-align: center; /* Center-align the text */
+    background-color: rgba(255, 255, 255); /* Add a subtle semi-transparent background */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 1200px; /* Limit width for readability */
+    margin: 20px auto; /* Center the paragraph and add margin */
+}
+
+/* NFT Samples Section */
+.nft-samples {
+    display: flex;
+    flex-wrap: wrap;  /* Ensure the items wrap to new rows */
+    justify-content: space-between;  /* Space items evenly */
+    gap: 10px;  /* Space between items */
+}
+
+.nft-item {
+    text-align: center;
+    width: calc(100% / 6 - 10px);  /* Make each item take up 1/6th of the row, accounting for the gap */
+    box-sizing: border-box;  /* Include padding in width calculation */
+    margin-bottom: 10px;  /* Space between rows */
+}
+
+.legendary-nft-item {
+    text-align: center;
+    width: calc(100% / 5 - 10px);  /* Make each item take up 1/6th of the row, accounting for the gap */
+    box-sizing: border-box;  /* Include padding in width calculation */
+    margin-bottom: 10px;  /* Space between rows */
+}
+
+.nft-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;  /* Space between the name and the image */
+    color: #000000;
+}
+
+.nft-item img {
+    width: 100%;  /* Make images fill their containers */
+    border-radius: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.legendary-nft-item img {
+    width: 100%;  /* Make images fill their containers */
+    border-radius: 23px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+/* Roadmap Section */
+#roadmap {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #5900ff, #0099ff); /* Left to right gradient */
+}
+
+#roadmap h2 {
+    font-size: 3em; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text for a stronger impact */
+    color: #ffffff; /* White color for the text */
+    text-align: center; /* Center-align the heading */
+    text-transform: uppercase; /* Uppercase text for a more modern, strong look */
+    letter-spacing: 3px; /* Add space between letters for a sleek look */
+    margin-bottom: 20px; /* Space between the heading and content below */
+    position: relative;
+}
+
+#roadmap h2::after {
+    content: ''; /* Create a decorative underline */
+    position: absolute;
+    left: 50%; /* Position it in the center */
+    bottom: -10px; /* Place it just below the text */
+    transform: translateX(-50%); /* Center it horizontally */
+    width: 500px; /* Width of the line */
+    height: 3px; /* Thickness of the line */
+    background: linear-gradient(to right, #ff6600, #ff9800); /* Gradient color */
+    border-radius: 5px; /* Slight rounding of the ends */
+}
+
+
+.phase {
+    margin-bottom: 30px; /* Space between each phase */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1); /* Light background for each phase */
+    border-radius: 8px;
+}
+
+#roadmap h3 {
+    font-size: 2.2em; /* Slightly larger to make it stand out more */
+    color: #ffffff; /* White text for contrast */
+    text-align: left; /* Align the heading to the left */
+    font-weight: 600; /* Semi-bold for emphasis */
+    letter-spacing: 2px; /* Space between letters for a cleaner look */
+    text-transform: capitalize; /* Capitalize the first letter for each word */
+    margin-bottom: 15px; /* Increase space between heading and content */
+    position: relative;
+}
+
+#roadmap h3::after {
+    content: ''; /* Add a custom underline */
+    position: absolute;
+    left: 0; /* Align the underline to the left */
+    bottom: -8px; /* Position it just below the text */
+    width: 60px; /* Width of the line */
+    height: 4px; /* Thickness of the line */
+    background: #ff6600; /* Set the underline color */
+    border-radius: 5px; /* Slight rounding of the line edges */
+}
+
+
+
+p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+
+/* Benefits Section */
+#benefits {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+#benefits ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Team Section */
+#team {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    max-width: 260px;
+    color: #000000;
+
+}
+
+.team-member img {
+    width: 50%;
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.team-member p {
+    color: #000000;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+#faq {
+    margin-left: 50px;  /* Adjust the value as needed */
+}
+
+/*
+.btn {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff5733; /* Change this to your brand color */
+    /*
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e14a2a; /* Darker shade for hover effect 
+}*/
+
+
+@media (max-width: 768px) {
+    .nft-samples {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nft-item {
+        max-width: 80%;  /* More space for the images on small screens */
+        margin-bottom: 20px; /* Space between items */
+    }
+
+    .nft-item img {
+        width: 100%; /* Images take up full width on smaller screens */
+    }
+}
+
+#about .container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #f96c26, #ff4520); /* Left to right gradient */
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.about-section h3 {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#about h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size:xx-large;
+}
+
+.about-section p {
+    font-size: 0.9em;
+    color: #262525;
+}
+
+/* Button for "Click Here To Meet The Food Doods!" */
+.btn-meet-doods {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.btn-meet-doods:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+.btn-meet-doods:active {
+    transform: scale(1);
+}
+
+
+.back-to-home {
+    position: fixed; /* Keeps it in place as the user scrolls */
+    top: 20px; /* Distance from the top of the page */
+    left: 20px; /* Distance from the left side */
+    z-index: 100; /* Ensures it stays above other elements */
+    border-radius: 25px; /* Optional: for rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.back-to-home a {
+    display: inline-block;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #ff6600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home a:hover {
+    background-color: #cc5200;
+    color: #ffffff;
+}
+
+/* Container for the button and images */
+.button-container {
+    margin-top: 30px; /* Adjust this value to control the spacing above the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between button and images */
+}
+
+/* Style for the images */
+.button-image {
+    width: 150px; /* Adjust the size of the images */
+    height: auto;
+    border-radius: 15px; /* Optional: for rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+/* Button for "Click Here To Meet The Food Doods!" */
+.btn-meet-doods {
+    display: inline-block;
+    padding: 24px 24px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.btn-meet-doods:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+.btn-meet-doods:active {
+    transform: scale(1);
+}
+
+/* Rarity Section */
+#rarityTitle {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.rarity-title-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+
+.rarity-title-text {
+    width: 50%; /* Adjust the width as needed */
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #000000;
+    font-size: 1.5em;
+
+}
+
+.rarity-title-text h2{
+    color: #000000;
+
+}
+
+.rarity-title-text p{
+    color: #000000;
+
+}
+
+#rarity {
+    background: linear-gradient(to right, #4facfe, #ff6de9); /* Left to right gradient */
+    padding: 10px 0;
+}
+
+.rarity-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4facfe, #ff6de9); /* Left to right gradient */
+    padding-bottom: 80px; /* Optional: Adds internal spacing */
+
+}
+
+.rarity-text {
+    width: 50%; /* Adjust the width as needed */
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-size: 1.5em;
+
+}
+
+.rarity-text h2 {
+    font-family: 'Poppins', sans-serif; /* Choose a stylish font */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: 700; /* Bold text */
+    color: #fff; /* White text */
+    text-transform: uppercase; /* Uppercase for a bold look */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for depth */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    margin-bottom: 20px;
+}
+
+.rarity-text h2::after {
+    content: ''; /* Add a decorative underline */
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #ff9800, #ff5722); /* Gradient for style */
+    margin-top: 10px;
+}
+
+.rarity-text p {
+    font-family: 'Arial', sans-serif; /* Clean and universally supported font */
+    font-size: 1.8rem; /* Moderate font size for readability */
+    color: #ffffff; /* Bright white to contrast with the blue background */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+    line-height: 1.6; /* Better line spacing for readability */
+    letter-spacing: 0.5px; /* Slightly spaced letters for clarity */
+    margin-bottom: 20px; /* Proper spacing below the paragraph */
+}
+
+
+.rarity-text ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rarity-text li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.rarity-image {
+    width: 20%; /* Adjust the width as needed */
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+}
+
+.raritylogo-image {
+    width: 10%; /* Adjust the width as needed */
+    display: flex;
+    justify-content: flex-start; /* Align the image to the left */
+}
+
+.rarity-image img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 0; /* Remove margin-right here */
+    margin-left: -100px; /* Adjust the image's position more to the left */
+    margin-bottom: -50px;
+    border-radius: 25px; /* Optional: for rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+.raritylogo-image img {
+    width: 100%; /* Ensures the image takes the full width of its container */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 0; /* Remove margin-right here */
+    margin-left: -100px; /* Adjust the image's position more to the left */
+    border-radius: 15px; /* Optional: for rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+}
+
+
+
