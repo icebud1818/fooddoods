@@ -661,7 +661,7 @@ footer .social-links a:hover {
     }
 
     .rarity-title-text h2 {
-        width: 150%; /* Allow h2 to take full width */
+        width: 175%; /* Allow h2 to take full width */
         margin-right: 20px; /* Optional: Add right margin */
         white-space: nowrap; /* Prevent wrapping */
         overflow: hidden; /* Hide overflow content */
@@ -746,6 +746,7 @@ footer .social-links a:hover {
         width: 100%;  /* Ensures items fill the container */
         border-radius: 18px;
         padding: 0 10px; /* Adjust padding for better spacing */
+        margin-left: 15px;
     }
 
     .nft-name {
